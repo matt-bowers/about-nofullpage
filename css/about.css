@@ -316,8 +316,25 @@ body {
   
 #about .jp-About-mainarea-cimg {
   display: block;
-  background-image: url(/images/mainareascreen.gif);
   margin: 40px 0 35px 0;
   height: 38vh;
   max-height: 453px;
+  -webkit-animation: jp-About-cimg-anim linear 15s infinite;
+  animation: jp-About-cimg-anim linear 15s infinite;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+@keyframes jp-About-cimg-anim {
+  0% { background-image: url(/images/jl-About-ma1.jpg); }
+  17% { background-image: url(/images/jl-About-ma1.jpg); }
+  20% { background-image: url(/images/jl-About-ma2.jpg); }
+  37% { background-image: url(/images/jl-About-ma2.jpg); }
+  40% { background-image: url(/images/jl-About-ma3.jpg); }
+  57% { background-image: url(/images/jl-About-ma3.jpg); }
+  60% { background-image: url(/images/jl-About-ma4.jpg); }
+  77% { background-image: url(/images/jl-About-ma4.jpg); }
+  80% { background-image: url(/images/jl-About-ma5.jpg); }
+  97% { background-image: url(/images/jl-About-ma5.jpg); }
+  100% { background-image: url(/images/jl-About-ma1.jpg); }
 }
